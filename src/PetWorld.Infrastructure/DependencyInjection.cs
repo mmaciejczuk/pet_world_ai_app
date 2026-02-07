@@ -17,9 +17,12 @@ public static class DependencyInjection
         if (string.IsNullOrWhiteSpace(cs))
             throw new InvalidOperationException("Missing connection string: PetWorldDb");
 
+        // Minimal fix: don't AutoDetect (it connects immediately).
+        var serverVersion = new MySqlServerVersion(new Version(8, 4, 8));
+
         services.AddDbContext<PetWorldDbContext>(opt =>
         {
-            opt.UseMySql(cs, ServerVersion.AutoDetect(cs));
+            opt.UseMySql(cs, serverVersion);
         });
 
         services.AddScoped<IProductRepository, ProductRepository>();

@@ -1,0 +1,29 @@
+services:
+  db:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: petworld
+    ports:
+      - "3306:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-psecret"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  web:
+    build:
+      context: .
+      dockerfile: src/PetWorld.Web/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: "http://+:5000"
+      ConnectionStrings__PetWorldDb: "Server=db;Port=3306;Database=petworld;User=root;Password=secret;"
+      OPENAI_API_KEY: "${OPENAI_API_KEY}"
+      AI__ChatModelId: "gpt-4o-mini"
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "5000:5000"

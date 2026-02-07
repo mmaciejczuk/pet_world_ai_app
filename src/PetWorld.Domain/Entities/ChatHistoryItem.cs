@@ -2,11 +2,9 @@ namespace PetWorld.Domain.Entities;
 
 public sealed class ChatHistoryItem
 {
-    public Guid Id { get; init; } = Guid.NewGuid();
-    public DateTimeOffset CreatedAt { get; init; } = DateTimeOffset.UtcNow;
-
-    public string Question { get; init; } = string.Empty;
-    public string Answer { get; init; } = string.Empty;
-
-    public int Iterations { get; init; }
+    public Guid Id { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public string Question { get; set; } = "";
+    public string Answer { get; set; } = "";
+    public int Iterations { get; set; }
 }

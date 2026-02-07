@@ -11,7 +11,7 @@ using PetWorld.Infrastructure.Persistence;
 namespace PetWorld.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(PetWorldDbContext))]
-    [Migration("20260207113818_InitialCreate")]
+    [Migration("20260207115540_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -28,10 +28,9 @@ namespace PetWorld.Infrastructure.Persistence.Migrations
 
                     b.Property<string>("Answer")
                         .IsRequired()
-                        .HasMaxLength(8000)
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTimeOffset>("CreatedAt")
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Iterations")
@@ -39,12 +38,11 @@ namespace PetWorld.Infrastructure.Persistence.Migrations
 
                     b.Property<string>("Question")
                         .IsRequired()
-                        .HasMaxLength(2000)
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
-                    b.ToTable("chat_history", (string)null);
+                    b.ToTable("ChatHistory");
                 });
 
             modelBuilder.Entity("PetWorld.Domain.Entities.Product", b =>
@@ -55,17 +53,14 @@ namespace PetWorld.Infrastructure.Persistence.Migrations
 
                     b.Property<string>("Category")
                         .IsRequired()
-                        .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(500)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(200)
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("PricePln")
@@ -74,7 +69,7 @@ namespace PetWorld.Infrastructure.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("products", (string)null);
+                    b.ToTable("Products");
 
                     b.HasData(
                         new

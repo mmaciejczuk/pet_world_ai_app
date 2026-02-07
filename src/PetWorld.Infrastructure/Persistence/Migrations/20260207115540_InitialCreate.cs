@@ -14,37 +14,37 @@ namespace PetWorld.Infrastructure.Persistence.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "chat_history",
+                name: "ChatHistory",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "TEXT", nullable: false),
-                    CreatedAt = table.Column<DateTimeOffset>(type: "TEXT", nullable: false),
-                    Question = table.Column<string>(type: "TEXT", maxLength: 2000, nullable: false),
-                    Answer = table.Column<string>(type: "TEXT", maxLength: 8000, nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    Question = table.Column<string>(type: "TEXT", nullable: false),
+                    Answer = table.Column<string>(type: "TEXT", nullable: false),
                     Iterations = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_chat_history", x => x.Id);
+                    table.PrimaryKey("PK_ChatHistory", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "products",
+                name: "Products",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "TEXT", nullable: false),
-                    Name = table.Column<string>(type: "TEXT", maxLength: 200, nullable: false),
-                    Category = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
+                    Category = table.Column<string>(type: "TEXT", nullable: false),
                     PricePln = table.Column<decimal>(type: "TEXT", precision: 10, scale: 2, nullable: false),
-                    Description = table.Column<string>(type: "TEXT", maxLength: 500, nullable: false)
+                    Description = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_products", x => x.Id);
+                    table.PrimaryKey("PK_Products", x => x.Id);
                 });
 
             migrationBuilder.InsertData(
-                table: "products",
+                table: "Products",
                 columns: new[] { "Id", "Category", "Description", "Name", "PricePln" },
                 values: new object[,]
                 {
@@ -65,10 +65,10 @@ namespace PetWorld.Infrastructure.Persistence.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "chat_history");
+                name: "ChatHistory");
 
             migrationBuilder.DropTable(
-                name: "products");
+                name: "Products");
         }
     }
 }
