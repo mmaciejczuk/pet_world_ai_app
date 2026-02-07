@@ -1,0 +1,26 @@
+@page "/history"
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using PetWorld.Domain.Entities
+@using PetWorld.Domain.Repositories
+@inject IChatHistoryRepository HistoryRepo
+
+<h1>Historia</h1>
+
+<div style="max-width: 1100px;">
+    <QuickGrid Items="@Items" Class="table">
+        <PropertyColumn Title="Data" Property="@(x => x.CreatedAt)" />
+        <PropertyColumn Title="Pytanie" Property="@(x => x.Question)" />
+        <PropertyColumn Title="Odpowiedź" Property="@(x => x.Answer)" />
+        <PropertyColumn Title="Iteracje" Property="@(x => x.Iterations)" />
+    </QuickGrid>
+</div>
+
+@code {
+    private IQueryable<ChatHistoryItem> Items = Array.Empty<ChatHistoryItem>().AsQueryable();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var list = await HistoryRepo.GetLatestAsync(200);
+        Items = list.AsQueryable();
+    }
+}
