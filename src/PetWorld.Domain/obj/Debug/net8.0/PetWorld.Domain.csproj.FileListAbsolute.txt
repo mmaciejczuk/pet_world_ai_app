@@ -9,3 +9,4 @@
 /Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/obj/Debug/net8.0/refint/PetWorld.Domain.dll
 /Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/obj/Debug/net8.0/PetWorld.Domain.pdb
 /Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/obj/Debug/net8.0/ref/PetWorld.Domain.dll
+/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/obj/Debug/net8.0/PetWorld.Domain.sourcelink.json

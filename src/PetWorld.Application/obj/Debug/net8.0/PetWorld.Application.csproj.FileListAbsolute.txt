@@ -13,3 +13,4 @@
 /Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Application/obj/Debug/net8.0/refint/PetWorld.Application.dll
 /Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Application/obj/Debug/net8.0/PetWorld.Application.pdb
 /Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Application/obj/Debug/net8.0/ref/PetWorld.Application.dll
+/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Application/obj/Debug/net8.0/PetWorld.Application.sourcelink.json
