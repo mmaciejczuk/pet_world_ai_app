@@ -1,0 +1,11 @@
+/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/bin/Debug/net8.0/PetWorld.Domain.deps.json
+/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/bin/Debug/net8.0/PetWorld.Domain.dll
+/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/bin/Debug/net8.0/PetWorld.Domain.pdb
+/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/obj/Debug/net8.0/PetWorld.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/obj/Debug/net8.0/PetWorld.Domain.AssemblyInfoInputs.cache
+/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/obj/Debug/net8.0/PetWorld.Domain.AssemblyInfo.cs
+/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/obj/Debug/net8.0/PetWorld.Domain.csproj.CoreCompileInputs.cache
+/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/obj/Debug/net8.0/PetWorld.Domain.dll
+/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/obj/Debug/net8.0/refint/PetWorld.Domain.dll
+/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/obj/Debug/net8.0/PetWorld.Domain.pdb
+/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/obj/Debug/net8.0/ref/PetWorld.Domain.dll

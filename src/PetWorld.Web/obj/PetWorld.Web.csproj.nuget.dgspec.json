@@ -1,0 +1,313 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Web/PetWorld.Web.csproj": {}
+  },
+  "projects": {
+    "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Application/PetWorld.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Application/PetWorld.Application.csproj",
+        "projectName": "PetWorld.Application",
+        "projectPath": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Application/PetWorld.Application.csproj",
+        "packagesPath": "/Users/mmaciejczuk/.nuget/packages/",
+        "outputPath": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mmaciejczuk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/PetWorld.Domain.csproj": {
+                "projectPath": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/PetWorld.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/PetWorld.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/PetWorld.Domain.csproj",
+        "projectName": "PetWorld.Domain",
+        "projectPath": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/PetWorld.Domain.csproj",
+        "packagesPath": "/Users/mmaciejczuk/.nuget/packages/",
+        "outputPath": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mmaciejczuk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Infrastructure/PetWorld.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Infrastructure/PetWorld.Infrastructure.csproj",
+        "projectName": "PetWorld.Infrastructure",
+        "projectPath": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Infrastructure/PetWorld.Infrastructure.csproj",
+        "packagesPath": "/Users/mmaciejczuk/.nuget/packages/",
+        "outputPath": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mmaciejczuk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Application/PetWorld.Application.csproj": {
+                "projectPath": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Application/PetWorld.Application.csproj"
+              },
+              "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/PetWorld.Domain.csproj": {
+                "projectPath": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Domain/PetWorld.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Agents.AI.OpenAI": {
+              "target": "Package",
+              "version": "[1.0.0-preview.260205.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
+            "OpenAI": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Web/PetWorld.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Web/PetWorld.Web.csproj",
+        "projectName": "PetWorld.Web",
+        "projectPath": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Web/PetWorld.Web.csproj",
+        "packagesPath": "/Users/mmaciejczuk/.nuget/packages/",
+        "outputPath": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Web/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mmaciejczuk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Application/PetWorld.Application.csproj": {
+                "projectPath": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Application/PetWorld.Application.csproj"
+              },
+              "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Infrastructure/PetWorld.Infrastructure.csproj": {
+                "projectPath": "/Users/mmaciejczuk/Documents/PetWorld/src/PetWorld.Infrastructure/PetWorld.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

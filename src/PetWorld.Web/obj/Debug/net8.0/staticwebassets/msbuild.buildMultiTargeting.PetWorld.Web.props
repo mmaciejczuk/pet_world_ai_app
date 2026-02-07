@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/PetWorld.Web.props" />
+</Project>
